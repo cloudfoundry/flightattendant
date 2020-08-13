@@ -29,7 +29,7 @@ func main() {
 		os.Exit(1)
 	}
 
-	if t, ok := targets.Targets[tg]; ok {
+	if t, ok := targets[tg]; ok {
 		if t.Token.Value != "" {
 			os.Exit(0)
 		}
